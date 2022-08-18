@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.categoriesFragment">
+
+    <RadioGroup
+        android:id="@+id/rg_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="40dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.153"
+        tools:layout_editor_absoluteX="16dp">
+
+
+    <com.qingyc.fixedanimatedradiobutton.FixedAnimatedRadioButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Expense"
+        android:gravity="center"
+        tools:layout_editor_absoluteX="43dp"
+        tools:layout_editor_absoluteY="86dp">
+
+    </com.qingyc.fixedanimatedradiobutton.FixedAnimatedRadioButton>
+
+    <com.qingyc.fixedanimatedradiobutton.FixedAnimatedRadioButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Income"
+        android:gravity="center"
+        tools:layout_editor_absoluteX="209dp"
+        tools:layout_editor_absoluteY="86dp">
+
+    </com.qingyc.fixedanimatedradiobutton.FixedAnimatedRadioButton>
+    </RadioGroup>
+
+
+    <EditText
+        android:id="@+id/date"
+        android:layout_width="337dp"
+        android:layout_height="43dp"
+        android:hint="Date"
+        android:inputType="date"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.293" />
+
+    <EditText
+        android:id="@+id/categories"
+        android:layout_width="337dp"
+        android:layout_height="43dp"
+        android:hint="Categories"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.356" />
+
+    <EditText
+        android:id="@+id/amount"
+        android:layout_width="337dp"
+        android:layout_height="43dp"
+        android:hint="Amount"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.418" />
+
+    <EditText
+        android:id="@+id/extranote"
+        android:layout_width="337dp"
+        android:layout_height="43dp"
+        android:hint="Extra Note"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.514" />
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.629"
+        android:backgroundTint="#FCD20D"
+        android:textColor="@color/black"
+        android:text="Save"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
